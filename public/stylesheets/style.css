@@ -1,0 +1,990 @@
+body {
+  padding: 50px;
+  font: 14px 'Open Sans', sans-serif;
+  background-color: F7F7F7;
+}
+
+
+.processicons  {
+    float:left;
+}
+
+#featureicon {
+    padding-top: 40px;
+}
+
+.white {
+    background-color: white;
+    height: 559px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    margin-left: -5%;
+    width: 110%;
+}
+
+/*.white2 {*/
+    /*background-color: white;*/
+    /*height: 2000px;*/
+    /*padding-top: 75px;*/
+    /*padding-bottom: 75px;*/
+    /*width: 100%;*/
+/*}*/
+
+.menu-icon {
+    visibility: hidden;
+}
+
+.row {
+    background-color: white;
+
+}
+
+.nav{
+    list-style:none;
+    text-align:center;
+    width: 100%;
+    height: 60px;
+    background:#eee;
+    display:inline;
+    position:relative;
+    z-index:1;
+    top:0;
+    right: 1px;
+    transition:all ease-in-out 0.4s;
+    box-shadow:0 0 20px #bbb;
+    position: fixed;
+
+}
+
+.nav li{
+    display:inline;
+}
+
+
+
+
+h1 , h2 {
+    color: black;
+    display:inline;
+}
+
+
+.nav a {
+    display: inline-block;
+    padding:20px;
+    text-decoration:none;
+    color: black;
+    font: 16px 'Open Sans', sans-serif;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    overflow: hidden;
+}
+.nav a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: gray;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.nav a:hover:before, .nav a:focus:before, .nav a:active:before {
+    left: 0;
+    right: 0;
+}
+
+.intro {
+    width: 50%;
+    float: left;
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:2s;
+    -moz-animation-duration:2s;
+    animation-duration:2s;
+}
+
+.intropic {
+    float:right;
+    width: 350px;
+    padding-left: 2%;
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:2s;
+    -moz-animation-duration:2s;
+    animation-duration:2s;
+}
+
+.renapic {
+    width: 350px;
+}
+
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:2s;
+    -moz-animation-duration:2s;
+    animation-duration:2s;
+}
+
+
+.small-button-style-outline .sqs-block-button .sqs-block-button-element--small {
+    color: #272727;
+}
+
+
+.row {
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:2s;
+    -moz-animation-duration:2s;
+    animation-duration:2s;
+}
+
+
+.row:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#projectinfo {
+    padding: 50px 50px 50px;
+    text-align: right;
+}
+
+#projectinfo2 {
+    padding: 50px 0px 50px 50px;
+    text-align: left;
+}
+
+#projectphoto {
+    padding: 78px 0px 78px 50px;
+
+}
+
+
+
+#projectphoto2 {
+    padding: 78px 0px 78px 0px;
+}
+
+.projectdescription {
+    text-align:right;
+    margin-left: 10rem;
+}
+
+.projectdescription2 {
+    text-align:left;
+    margin-right: 10rem;
+    padding-right: 5px;
+
+}
+
+
+
+.card-1 {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+
+
+.sociallinks {
+    background-color: white;
+    width: 350px;
+    height: 200px;
+    text-align:center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.sociallinks:hover {
+     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+.pictext {
+    padding: 15px;
+}
+
+
+
+.pictext2 {
+    padding: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.pictext2:hover {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+
+}
+
+.pictext3 {
+    padding: 5px;
+    float:left;
+    clear:both;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.pictext3:hover {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+
+}
+
+
+
+.designtext {
+    padding: 0px 7px 10px 7px;
+}
+
+.designheading {
+    padding: 0px 7px 0px 7px;
+}
+
+
+.designimage {
+    padding: 30px 7px 7px 7px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+
+}
+
+.circle-container a {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: 100%; left: 43%;
+    width: 10em; height: 10em;
+}
+.circle-container img { display: block; width: 100%; }
+
+.deg0 { transform: translate(12em); } /* 12em = half the width of the wrapper */
+.deg45 { transform: rotate(45deg) translate(12em) rotate(-45deg); }
+.deg90 { transform: rotate(90deg) translate(12em) rotate(-90deg); }
+.deg135 { transform: rotate(135deg) translate(12em) rotate(-135deg); }
+.deg180 { transform: rotate(180deg) translate(12em) rotate(-180deg); }
+.deg225 { transform: rotate(225deg) translate(12em) rotate(-225deg); }
+.deg270 { transform: rotate(270deg) translate(12em) rotate(-270deg); }
+.deg360 { transform: rotate(360deg) translate(12em) rotate(-360deg); }
+.deg315 { transform: rotate(315deg) translate(12em) rotate(-315deg); }
+
+.designimage2 {
+    padding: 50px 7px 7px 7px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+
+}
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+
+
+
+.designrow {
+    width: 325px;
+    height: 325px;
+    margin: 38px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    float:left;
+    background-color: white;
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:2s;
+    -moz-animation-duration:2s;
+    animation-duration:2s;
+}
+
+
+.designrow:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.renalogo {
+    padding: 170px 7px 7px 7px;
+    display: block;
+    width: 38%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.projectimage {
+    height: 275px;
+    width: 475px;
+}
+
+
+.projectimage2 {
+    height: 275px;
+    width: 475px;
+}
+
+
+
+
+
+/*iphone 5*/
+@media only screen and (max-width: 320px) {
+
+    .container {
+        margin: auto 0;
+
+    }
+    .renalogo {
+        padding: 100px 7px 7px 7px;
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav a {
+        display: inline-block;
+        text-decoration:none;
+        color: black;
+        font: 10px 'Open Sans', sans-serif;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px transparent;
+        position: absolute;
+        overflow: hidden;
+
+    }
+
+    #process {
+        visibility: hidden;
+    }
+
+    .nav a:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        background: gray;
+        height: 2px;
+        -webkit-transition-property: left, right;
+        transition-property: left, right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+
+    .intro {
+        width: 100%;
+        float: left;
+        text-align:center;
+        opacity:0;  /* make things invisible upon start */
+        -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
+        -moz-animation:fadeIn ease-in 1;
+        animation:fadeIn ease-in 1;
+
+        -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+        -moz-animation-fill-mode:forwards;
+        animation-fill-mode:forwards;
+
+        -webkit-animation-duration:2s;
+        -moz-animation-duration:2s;
+        animation-duration:2s;
+    }
+
+    .intropic {
+        float:left;
+        width: 100%;
+        opacity:0;  /* make things invisible upon start */
+        -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
+        -moz-animation:fadeIn ease-in 1;
+        animation:fadeIn ease-in 1;
+
+        -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+        -moz-animation-fill-mode:forwards;
+        animation-fill-mode:forwards;
+
+        -webkit-animation-duration:2s;
+        -moz-animation-duration:2s;
+        animation-duration:2s;
+
+    }
+
+    #techanded {
+        text-align:left;
+    }
+
+
+
+    .sociallinks {
+        background-color: white;
+        width: 230px;
+        height: 200px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    }
+
+    p.projectdescription {
+        text-align:center;
+        margin-left: 0rem;
+
+    }
+
+    p.projectdescription2 {
+        text-align:center;
+        margin-right: 0rem;
+
+    }
+
+    #projectphoto.five.columns                   { width: 100%; }
+    #projectinfo.seven.columns                  { width: 100%; }
+    #projectphoto2.five.columns                   { width: 100%; }
+    #projectinfo2.seven.columns                  { width: 100%; }
+
+    a  {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+
+    .projectimage {
+        height: 100px;
+        width: 175px;
+    }
+
+
+    .projectimage2 {
+        height: 100px;
+        width: 175px;
+    }
+
+    #projectinfo {
+        padding: 0px 5px 0px 5px;
+        text-align: center;
+    }
+
+    #projectinfo2 {
+        padding: 0px 5px 0px 5px;
+        float: left;
+        text-align: center;
+    }
+
+    .projectimage {
+        margin-left: 7%;
+    }
+
+    .projectimage2 {
+        margin-left: 10%;
+    }
+
+    #projectphoto {
+        padding: 5px 5px 5px 5px;
+
+    }
+
+
+    #projectphoto2 {
+        padding: 0px 0px 0px 0px;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    .designrow {
+        width: 325px;
+        height: 325px;
+        margin-left: -8%;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        float:left;
+        background-color: white;
+        opacity:0;  /* make things invisible upon start */
+        -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+        -moz-animation:fadeIn ease-in 1;
+        animation:fadeIn ease-in 1;
+
+        -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+        -moz-animation-fill-mode:forwards;
+        animation-fill-mode:forwards;
+
+        -webkit-animation-duration:2s;
+        -moz-animation-duration:2s;
+        animation-duration:2s;
+    }
+    .renapic {
+        width: 230px;
+
+    }
+
+}
+
+/*iphone 6*/
+@media (min-device-width: 320px) and (max-width: 480px) {
+
+
+    .designrow {
+        width: 325px;
+        height: 325px;
+        margin-left: -9%;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        float:left;
+        background-color: white;
+        opacity:0;  /* make things invisible upon start */
+        -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+        -moz-animation:fadeIn ease-in 1;
+        animation:fadeIn ease-in 1;
+
+        -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+        -moz-animation-fill-mode:forwards;
+        animation-fill-mode:forwards;
+
+        -webkit-animation-duration:2s;
+        -moz-animation-duration:2s;
+        animation-duration:2s;
+    }
+    .renalogo {
+        padding: 150px 7px 7px 7px;
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .intro {
+        width: 100%;
+        float: left;
+        text-align:center;
+        opacity:0;  /* make things invisible upon start */
+        -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
+        -moz-animation:fadeIn ease-in 1;
+        animation:fadeIn ease-in 1;
+
+        -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+        -moz-animation-fill-mode:forwards;
+        animation-fill-mode:forwards;
+
+        -webkit-animation-duration:2s;
+        -moz-animation-duration:2s;
+        animation-duration:2s;
+    }
+
+    .intropic {
+        float:left;
+        width: 100%;
+        opacity:0;  /* make things invisible upon start */
+        -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
+        -moz-animation:fadeIn ease-in 1;
+        animation:fadeIn ease-in 1;
+
+        -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+        -moz-animation-fill-mode:forwards;
+        animation-fill-mode:forwards;
+
+        -webkit-animation-duration:2s;
+        -moz-animation-duration:2s;
+        animation-duration:2s;
+
+    }
+
+    #techanded {
+        text-align:left;
+    }
+
+
+    .renapic {
+        width: 230px;
+    }
+
+    .sociallinks {
+        background-color: white;
+        width: 230px;
+        height: 200px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    }
+
+    .pictext2 {
+        padding: 10px;
+    }
+
+
+
+    .nav a {
+        display: inline-block;
+        padding:20px 7px 0px 7px;
+        text-decoration:none;
+        color: black;
+        font: 14px 'Open Sans', sans-serif;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px transparent;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .nav a:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        background: gray;
+        height: 2px;
+        -webkit-transition-property: left, right;
+        transition-property: left, right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+
+    p.projectdescription {
+        text-align:center;
+        margin-left: 0rem;
+
+    }
+
+    p.projectdescription2 {
+        text-align:center;
+        margin-right: 0rem;
+
+    }
+
+    #projectphoto.five.columns                   { width: 100%; }
+    #projectinfo.seven.columns                  { width: 100%; }
+    #projectphoto2.five.columns                   { width: 100%; }
+    #projectinfo2.seven.columns                  { width: 100%; }
+
+    a  {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+
+    .projectimage {
+        height: 100px;
+        width: 175px;
+    }
+
+
+    .projectimage2 {
+        height: 100px;
+        width: 175px;
+    }
+
+    #projectinfo {
+        padding: 0px 5px 0px 5px;
+        text-align: center;
+    }
+
+    #projectinfo2 {
+        padding: 20px 5px 0px 5px;
+        float: left;
+        text-align: center;
+    }
+
+    .projectimage {
+        margin-left: 10%;
+    }
+
+    .projectimage2 {
+        margin-left: 10%;
+    }
+
+    #projectphoto {
+        padding: 20px 5px 20px 5px;
+
+    }
+
+
+    #projectphoto2 {
+        padding: 0px 0px 20px 0px;
+    }
+
+    .row {
+        width: 100%;
+    }
+}
+
+/*ipad*/
+
+@media only screen and (min-device-width : 480px) and (max-device-width : 1024px) {
+    .container {
+        margin: auto 0;
+
+    }
+
+    .renalogo {
+        padding: 250px 7px 7px 7px;
+        display: block;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .intro {
+        width: 100%;
+        float: left;
+        text-align:left;
+        opacity:0;  /* make things invisible upon start */
+        -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
+        -moz-animation:fadeIn ease-in 1;
+        animation:fadeIn ease-in 1;
+
+        -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+        -moz-animation-fill-mode:forwards;
+        animation-fill-mode:forwards;
+
+        -webkit-animation-duration:2s;
+        -moz-animation-duration:2s;
+        animation-duration:2s;
+    }
+
+    .intropic {
+        float:left;
+        width: 100%;
+        opacity:0;  /* make things invisible upon start */
+        -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
+        -moz-animation:fadeIn ease-in 1;
+        animation:fadeIn ease-in 1;
+
+        -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+        -moz-animation-fill-mode:forwards;
+        animation-fill-mode:forwards;
+
+        -webkit-animation-duration:2s;
+        -moz-animation-duration:2s;
+        animation-duration:2s;
+
+    }
+
+    #techanded {
+        text-align:left;
+    }
+
+
+    .renapic {
+        width: 550px;
+
+    }
+
+    .sociallinks {
+        background-color: white;
+        width: 550px;
+        height: 250px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    }
+
+    .pictext2 {
+        padding: 25px;
+    }
+
+    .nav a {
+        display: inline-block;
+        padding:20px 7px 0px 7px;
+        text-decoration:none;
+        color: black;
+        font: 16px 'Open Sans', sans-serif;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px transparent;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .nav a:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        background: gray;
+        height: 2px;
+        -webkit-transition-property: left, right;
+        transition-property: left, right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+
+
+    #projectphoto.five.columns                   { width: 100%; }
+    #projectinfo.seven.columns                  { width: 100%; }
+    #projectphoto2.five.columns                   { width: 100%; }
+    #projectinfo2.seven.columns                  { width: 100%; }
+
+    .projectimage {
+        margin-left: 2%;
+    }
+
+    .projectimage2 {
+        margin-left: 10%;
+    }
+
+    #projectinfo {
+        padding: 30px 50px 30px;
+        text-align: right;
+    }
+
+    #projectinfo2 {
+        padding: 30px 0px 30px 50px;
+        text-align: left;
+        float:right;
+    }
+
+    #projectphoto {
+        padding: 50px 0px 50px 50px;
+    }
+
+
+    #projectphoto2 {
+        padding: 0px 0px 100px 0px;
+        float: left;
+    }
+
+
+
+    .designrow {
+        width: 325px;
+        height: 325px;
+        /*margin-left: 23%;*/
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        float:left;
+        background-color: white;
+        opacity:0;  /* make things invisible upon start */
+        -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+        -moz-animation:fadeIn ease-in 1;
+        animation:fadeIn ease-in 1;
+
+        -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+        -moz-animation-fill-mode:forwards;
+        animation-fill-mode:forwards;
+
+        -webkit-animation-duration:2s;
+        -moz-animation-duration:2s;
+        animation-duration:2s;
+    }
+
+}
+
+.process {
+    display: none;
+    border:1px solid #000;
+    border:1px solid #000;
+    height:30px;
+    width:290px;
+    margin-left:10px;
+    font-color: black;
+    font-size: 42px;
+}
+
+a:hover + .process {
+    display: block;
+}​
+
+.processsection {
+margin: auto 0;
+}
